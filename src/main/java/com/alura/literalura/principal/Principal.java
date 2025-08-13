@@ -53,7 +53,7 @@ public class Principal {
             System.out.println(menu);
             try {
                 opcao = leitura.nextInt();
-                leitura.nextLine(); // Limpa o buffer do scanner
+                leitura.nextLine();
 
                 switch (opcao) {
                     case 1:
@@ -79,7 +79,7 @@ public class Principal {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Erro: Por favor, digite um número válido para a opção.");
-                leitura.nextLine(); // Limpa o buffer para evitar loop infinito
+                leitura.nextLine();
             }
         }
     }
@@ -104,7 +104,7 @@ public class Principal {
                 autor = autorRepositorio.findByNomeIgnoreCase(autorDTO.name())
                         .orElseGet(() -> autorRepositorio.save(new Autor(autorDTO)));
             } else {
-                autor = null; // ou um autor "Desconhecido"
+                autor = null;
             }
 
             Livro livro = new Livro(livroDTO);

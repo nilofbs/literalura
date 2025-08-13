@@ -78,7 +78,6 @@ public class Livro {
         this.numeroDeDownloads = numeroDeDownloads;
     }
 
-    // Método toString para uma representação amigável do objeto
     @Override
     public String toString() {
         String nomeAutor = (autor != null) ? autor.getNome() : "Autor desconhecido";

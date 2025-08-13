@@ -1,5 +1,3 @@
-// Dentro do arquivo Autor.java
-
 package com.alura.literalura.model;
 
 import com.alura.literalura.dto.AutorDTO;
@@ -24,18 +22,13 @@ public class Autor {
     @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Livro> livros = new ArrayList<>();
 
-    // 1. Construtor padrão (obrigatório para o JPA)
     public Autor() {}
 
-    // 2. Este é o construtor que resolve o erro atual
     public Autor(AutorDTO dadosAutor) {
         this.nome = dadosAutor.name();
         this.anoDeNascimento = dadosAutor.birthYear();
         this.anoDeFalecimento = dadosAutor.deathYear();
     }
-
-    // Getters, Setters e o método toString...
-    // (Certifique-se de que eles também estão aqui)
 
     public Long getId() {
         return id;
