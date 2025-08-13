@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://youtu.be/FjXptQSZsrU">
-    <img src="https://img.youtube.com/vi/FjXptQSZsrU/maxresdefault.jpg" alt="Literalura - Demo" width="600">
+  <a href="https://youtu.be/kc5qtkFmGEo">
+    <img src="https://img.youtube.com/vi/kc5qtkFmGEo/maxresdefault.jpg" alt="Literalura - Demo" width="600">
   </a>
 </p>
 <p align="center">
